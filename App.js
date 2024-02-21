@@ -2,9 +2,20 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+
+    
 return (
 <View style={styles.container}>
-<View style={{ backgroundColor: 'gray', width: '100%', height: 60 }}>
+
+    <TextInput style= {styles.inputName}
+    placeholder='Digite seu Nome'
+    inputMode='numeric'
+    secureTextEntry={true}
+    placeholderTextColor='pink'
+    onChangeText={changeText}
+    />
+
+{/* <View style={{ backgroundColor: 'gray', width: '100%', height: 60 }}>
 </View>
 <View style={styles.secondaryContainer}>
 <Text style= {{ color: 'blue', fontSize: 30, fontWeight: 'bold', textAlign: 'end'}}>Milena Basso</Text>
@@ -12,7 +23,8 @@ return (
 <Text style= {{ backgroundColor: 'pink',  fontSize: 20, textAlign: 'center'}}>Sala 07</Text>
 </View>
 <View style={{ backgroundColor: 'gray', width: '100%', height: 60 }}>
-</View>
+</View> */}
+
 </View>
 );
 }
